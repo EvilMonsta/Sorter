@@ -21,10 +21,11 @@ int main(int argc, char* argv[])
             return 0;
         }
     }
-    char ch;
-    while (in.get(ch))
+
+    while (!in.eof())
     {
-        cout << ch;
+        getline(in, s);
+        cout << s << endl;
     }
     return 0;
 }
